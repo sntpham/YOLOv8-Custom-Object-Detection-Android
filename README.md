@@ -119,11 +119,12 @@ class Detect(nn.Module):
 ```
 
 ### Step 2: convert `.pt` to `onnx`
+In terminal or cmd:
 > yolo task=detect mode=export model=best.pt format=onnx simplify=True opset=13 imgsz=416
 
 ### Step 3: convert `onnx` to `.param` and `.bin`
 For this task we will use this website here
-https://convertmodel.com/
+https://convertmodel.com/ (Status 8/15/2025: currently the website is down, one option is to run it locally https://github.com/daquexian/web-model-converter)
 
 <img src="tutorial_assets/convertmodel.png" width="300" />
 
